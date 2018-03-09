@@ -1,3 +1,8 @@
+#specific CWtrainer stuff:
+CW_speak_cache/
+*.mp3
+passwords
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
