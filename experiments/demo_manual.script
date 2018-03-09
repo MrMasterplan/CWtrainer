@@ -6,6 +6,8 @@ speak: CW audio trainer created by Simon
 pause: 0.2
 spell: OZ0SH
 pause: 0.5
+speak: Script feature demo.
+pause: 1.0
 
 speak: Now morse Simon
 pause: 1.0
@@ -28,6 +30,7 @@ pause: 1.0
 morse: Simon
 pause: 1.0
 
+#default
 set: volume: 0.5
 set: freq: 440
 speak: Now morse Simon with an a
@@ -35,6 +38,7 @@ pause: 1.0
 morse: Simon
 pause: 1.0
 
+#default
 set: freq: 800
 set: WPM: 35
 speak: Now morse the quick brown fox really fast
@@ -42,10 +46,27 @@ pause: 1.0
 morse: The quick brown fox jumped over the lazy dog.
 pause: 1.0
 
+set: WPM: 35
+set: Farnsworth: 12
+speak: Now morse the quick brown fox really fast but with slow spacing
+pause: 1.0
+morse: The quick brown fox jumped over the lazy dog.
+pause: 1.0
 
+#default
+set: WPM: 12
+#when Farnsworth in greater than WPM it has no effect
+set: Farnsworth: 600
 
-#                         'Farnsworth':500.,
-#                         'bandwidth':100.,
+speak: Now morse hello world with clicky tones.
+set: bandwidth: 10000.
+pause: 1.0
+morse: hello world
+pause: 1.0
+
+#default
+set: bandwidth: 100.
+
 
 pause: 1.0
 speak: End of demo.
