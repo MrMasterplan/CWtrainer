@@ -1,0 +1,40 @@
+#This is the control file that is used to generate a long script.
+pause: 1.0
+speak: CW audio course created by Simon
+pause: 0.2
+spell: OZ0SH
+pause: 0.5
+speak: This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+pause: 1.0
+speak: lesson 6
+pause: 1.0
+speak: 300 random Code groups of length 6
+pause: 0.5
+speak: 12 words per minute
+pause: 0.5
+
+
+# use lines starting with ## to control the execution of the generator.
+# rand_seed: 12345
+## generate:
+##     - name: RandCallSign
+##       params:
+##           Nmin: 6
+##           Nmax: 6
+##           charset: abcdefghijklmnopqrstuvwxyz0123456789
+##       template: |
+##                 speak: Listen:
+##                 pause: 1.0
+##                 morse: {{0}}
+##                 pause: 1.0
+##                 speak: Check:
+##                 pause: 1.0
+##                 spell: {{0}}
+##                 pause: 1.0
+##       repeat: 300
+
+#insert the generated stuff here
+{RandCallSign}
+
+pause: 1.0
+speak: End of lesson
