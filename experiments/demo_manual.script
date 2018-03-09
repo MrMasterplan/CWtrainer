@@ -1,0 +1,52 @@
+#This is a demo of a manual script.
+#It demonstates every type of command that is currently legal in a script that is to be encoded.
+
+pause: 1.0
+speak: CW audio trainer created by Simon
+pause: 0.2
+spell: OZ0SH
+pause: 0.5
+
+speak: Now morse Simon
+pause: 1.0
+morse: Simon
+pause: 1.0
+
+speak: Now spell Simon
+pause: 1.0
+spell: Simon
+pause: 1.0
+
+speak: Now key garbage
+pause: 1.0
+key: --.......-- -.-.-.-.-
+pause: 1.0
+
+set: volume: 0.1
+speak: Now morse Simon quiet
+pause: 1.0
+morse: Simon
+pause: 1.0
+
+set: volume: 0.5
+set: freq: 440
+speak: Now morse Simon with an a
+pause: 1.0
+morse: Simon
+pause: 1.0
+
+set: freq: 800
+set: WPM: 35
+speak: Now morse the quick brown fox really fast
+pause: 1.0
+morse: The quick brown fox jumped over the lazy dog.
+pause: 1.0
+
+
+
+#                         'Farnsworth':500.,
+#                         'bandwidth':100.,
+
+pause: 1.0
+speak: End of demo.
+

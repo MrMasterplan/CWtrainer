@@ -1,0 +1,48 @@
+#This is a script template demo
+# it demonstarates all functionality currently contained in the template to script compiler
+
+pause: 1.0
+speak: CW audio trainer created by Simon
+pause: 0.2
+spell: OZ0SH
+pause: 0.5
+speak: This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+pause: 1.0
+speak: Test Sample Lesson
+pause: 1.0
+speak: 10 Code groups of length 2
+pause: 0.5
+speak: 12 words per minute
+pause: 0.5
+
+
+# use lines starting with ## to control the execution of the generator.
+# the follwing line is a commented out control line. It could be used to set the PRNG seed.
+# ## rand_seed: 12345
+# there is one space after the ## here, but there could be more as long as you are consistent.
+# ScriptGenerator.py will find all lines with ##, join them, and try to parse the result as yaml
+## generate:
+
+# this is currenly the only algorithm. The idea was to extend this with a random words generator at some point.
+##     - name: RandCallSign
+##       params:
+##           Nmin: 2
+##           Nmax: 2
+##           charset: abcdefghijklmnopqrstuvwxyz0123456789
+# the alogorithm only generates one argument, The template has to match the alogorithm of course
+##       template: |
+##                 speak: Listen:
+##                 pause: 1.0
+##                 morse: {{0}}
+##                 pause: 1.0
+##                 speak: Check:
+##                 pause: 1.0
+##                 spell: {{0}}
+##                 pause: 1.0
+##       repeat: 10
+
+#insert the generated stuff here. This invokes the algorithm
+{RandCallSign}
+
+pause: 1.0
+speak: End of lesson
